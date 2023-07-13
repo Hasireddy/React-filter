@@ -1,6 +1,10 @@
 .App
 {
     text-align: center;
+    width:90vw;
+    max-width:800px;
+    margin:auto;
+    font-size:1rem;
 }
 
 
@@ -33,4 +37,27 @@ button:not([disabled]):focus {
 
 button:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+img{
+  width:100%;
+  object-fit:contain;
+}
+
+@media screen and (min-width:768px)
+{
+  .App
+  {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.collection
+{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: inherit;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
